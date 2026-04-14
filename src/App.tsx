@@ -23,7 +23,6 @@ import Search from './pages/Search.tsx';
 import Bottoms from './pages/Bottoms.tsx';
 import Beachwear from './pages/Beachwear.tsx';
 import Coords from './pages/Coords.tsx';
-
 import Shop from './pages/Shop';
 import PersonalStylist from './pages/PersonalStylist';
 import ShippingReturns from './pages/ShippingReturns';
@@ -43,7 +42,7 @@ function App() {
     <AuthProvider>
       <CartProvider>
         <WishlistProvider>
-          <Router>
+          <Router basename="/Zilkreol_luxuryClothing/">
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
